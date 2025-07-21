@@ -34,7 +34,6 @@ def highlight_diff_group(group1, group2):
     if group1 == group2:
         return group1, group2
     
-    # 逐位比较，高亮不同位
     highlighted1 = []
     highlighted2 = []
     for b1, b2 in zip(group1, group2):
