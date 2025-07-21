@@ -287,8 +287,8 @@ def test_layer_comparison(image_dir, label_file):
 
 if __name__ == "__main__":
 
-    image_dir = "../Val_dataset/ClassifierTest1000/images/"
-    label_file = "../Val_dataset/ClassifierTest1000/imagenet_2012_ground_truth.txt"
+    image_dir = ""
+    label_file = ""
 
    # file path check
     if not os.path.exists(image_dir):
