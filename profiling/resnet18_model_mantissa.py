@@ -79,8 +79,8 @@ def verify_modification(model):
             for i, mantissa in enumerate(mantissas[:5]):
                 last_10_bits = mantissa & 0x3FF
                 if last_10_bits != 0:
-                    print(f"Fail! Layer: {name} value#{i} mantissa last:{bits}位: {bin(last_10_bits)}")
-                    fw.write(f"Fail! Layer: {name} value#{i} mantissa last:{bits}位: {bin(last_10_bits)}\n")
+                    print(f"Fail! Layer: {name} value#{i} mantissa last:{bits}: {bin(last_10_bits)}")
+                    fw.write(f"Fail! Layer: {name} value#{i} mantissa last:{bits}: {bin(last_10_bits)}\n")
                     return
             
     print(f"Success! All weight's last mantissa {bits} bits are set to zero")
