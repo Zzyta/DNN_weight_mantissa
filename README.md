@@ -52,9 +52,10 @@ The ResNet architecture in the file can be substituted with any model supported 
         python3 test_mantissa.py
     ```
     Expected output: Validation metrics confirming successful masking:
+   
     ![alt text](figs/image.png)
 
-2. Evaluate Accuracy with resnet18_weight_mantissa_test.py:
+3. Evaluate Accuracy with resnet18_weight_mantissa_test.py:
     Update the paths to test images, labels, and the modified weights:
     ```
         model_app.load_state_dict(torch.load('./weight/resnet18_truncated_weights.pth'))
@@ -63,10 +64,12 @@ The ResNet architecture in the file can be substituted with any model supported 
         label_file = "../Val_dataset/imagenet/label.txt"
     ```
     Execute to obtain Top-1/Top-5 accuracy comparisons between original and masked models:
+   
     ![alt text](figs/image2.png)
 
 
-3. Analyze Layer-wise Differences with resnet18_layer_diff_test.py:
+5. Analyze Layer-wise Differences with resnet18_layer_diff_test.py:
     Configure paths to test data and modified weights.
     Run to generate layer-by-layer statistical comparisons between original and masked model outputs:
+   
     ![alt text](figs/image3.png)
