@@ -13,7 +13,7 @@ import torch.multiprocessing as mp
 
 # create result file
 fw = open("./ResNet18-layer-diff.txt", 'a') 
-fw.write("优化后的测试开始\n")
+fw.write("Test Begin:\n")
 fw.write("="*50 + "\n")
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
