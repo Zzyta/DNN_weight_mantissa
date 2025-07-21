@@ -3,19 +3,24 @@
 ## The following files are included in the profiling directory:
 
 1. resnet18_model_mantissa.py
-    Implements mantissa masking operations on model weights for ResNet18.
+
+Implements mantissa masking operations on model weights for ResNet18.
 
 2. test_mantissa.py
-    Validates the effectiveness of mantissa masking after application.
+
+Validates the effectiveness of mantissa masking after application.
 
 3. resnet18_weight_mantissa_test.py
-    Compares Top-1 and Top-5 accuracy between original FP32 weights and mantissa-masked weights.
+
+Compares Top-1 and Top-5 accuracy between original FP32 weights and mantissa-masked weights.
 
 4. resnet18_layer_diff_test.py
-    Performs layer-wise output statistics and comparisons between original FP32 weights and mantissa-masked weights.
+
+Performs layer-wise output statistics and comparisons between original FP32 weights and mantissa-masked weights.
 
 5. weight_distribute.py (with results in weight-distribution.txt)
-    Analyzes and visualizes the distribution of weights across different model parameters.
+
+Analyzes and visualizes the distribution of weights across different model parameters.
 
 The ResNet architecture in the file can be substituted with any model supported by the PyTorch framework.
 
