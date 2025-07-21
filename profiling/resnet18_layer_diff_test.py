@@ -17,8 +17,8 @@ fw.write("Test Begin:\n")
 fw.write("="*50 + "\n")
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-print(f"使用设备: {device}")
-fw.write(f"使用设备: {device}\n")
+print(f"Using Device: {device}")
+fw.write(f"Using Device: {device}\n")
 
 # Input transform
 transform = transforms.Compose([
