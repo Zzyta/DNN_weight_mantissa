@@ -90,7 +90,7 @@ def test_model(image_dir, label_file):
     dataset = ImageNetDataset(image_files, gt_labels, transform=transform)
     dataloader = DataLoader(
         dataset,
-        batch_size=500,  # batch
+        batch_size=1000,  # batch
         num_workers=min(8, mp.cpu_count()),  # multiprocess
         pin_memory=True,
         prefetch_factor=4,  # prefetch
