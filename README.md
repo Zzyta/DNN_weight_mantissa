@@ -24,7 +24,13 @@ Analyzes and visualizes the distribution of weights across different model param
 
 The ResNet architecture in the file can be substituted with any model supported by the PyTorch framework. In this profiling work, we use:
 ```
-    models = ['alexnet', 'googlenet', 'efficientnet_b0', 'efficientnet_b1', 'efficientnet_b2', 'efficientnet_b3', 'efficientnet_b4', 'efficientnet_b5', 'efficientnet_b6', 'efficientnet_b7', 'efficientnet_v2_s', 'efficientnet_v2_m', 'efficientnet_v2_l', 'mobilenet_v2', 'mobilenet_v3_large', 'vgg16', 'resnet18', 'resnet34', 'resnet50', 'resnet101', 'resnet152', 'shufflenet_v2_x0_5', 'shufflenet_v2_x1_0', 'shufflenet_v2_x1_5', 'shufflenet_v2_x2_0', 'vit_b_16', 'vit_b_32', 'vit_l_16', 'vit_l_32']
+    models = ['alexnet', 'googlenet', 'vgg16',
+    'efficientnet_b0', 'efficientnet_b1', 'efficientnet_b2', 'efficientnet_b3', 'efficientnet_b4', 'efficientnet_b5', 'efficientnet_b6', 'efficientnet_b7',
+    'efficientnet_v2_s', 'efficientnet_v2_m', 'efficientnet_v2_l',
+    'mobilenet_v2', 'mobilenet_v3_large',
+    'resnet18', 'resnet34', 'resnet50', 'resnet101', 'resnet152',
+    'shufflenet_v2_x0_5', 'shufflenet_v2_x1_0', 'shufflenet_v2_x1_5', 'shufflenet_v2_x2_0',
+    'vit_b_16', 'vit_b_32', 'vit_l_16', 'vit_l_32']
 ```
  
 ## Environment Requirements
